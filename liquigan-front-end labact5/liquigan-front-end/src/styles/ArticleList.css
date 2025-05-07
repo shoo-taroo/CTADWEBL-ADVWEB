@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Layout for the full page */
+.article-list-page {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+/* Header section containing title and image */
+.header {
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #b22222;
+    margin-bottom: 10px;
+}
+
+.sunny-img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Flexbox layout for article cards */
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 30px 30px;
+}
+
+/* Individual card styling */
+.article-card {
+    background-color: #292929; /* Darker background color */
+    border: 2px solid #c2b280;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff; /* White font color */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 260px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article-card:hover {
+    transform: scale(1.03);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.article-card h3 {
+    margin-top: 0;
+    color: #ffffff; /* White color for the heading */
+    font-size: 1.2rem;
+}
+
+.article-card p {
+    color: #dddddd; /* Light gray font color for paragraph */
+    font-size: 0.95rem;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+/* Styling for the Learn More link */
+.learn-more {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.learn-more-link {
+    color: #007bff; /* Blue color for the Learn More link */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.learn-more-link:hover {
+    text-decoration: underline;
+}
